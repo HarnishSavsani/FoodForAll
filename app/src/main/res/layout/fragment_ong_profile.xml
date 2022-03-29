@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".activities.ong.OngProfileFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="0dp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/teal_700"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/profilePicture"
+            android:layout_width="114dp"
+            android:layout_height="114dp"
+            android:src="@drawable/default_ngo_logo"
+            android:background="#fff"
+            app:shapeAppearance="@style/ShapeAppearance.ImageView"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_meeting_room_24"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NGO    :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Being Human"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Owner :"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+
+                />
+            <TextView
+                android:id="@+id/ownerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jaos Carlos"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+
+                />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_email_24"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email  :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:id="@+id/acc_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="carlos@gmail.com"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_local_phone_24"
+            android:layout_margin="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone :"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+
+            />
+        <TextView
+            android:id="@+id/acc_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9284262299"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                android:layout_margin="10dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Link    :"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"
+
+                />
+            <TextView
+                android:id="@+id/siteUrl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="www.beinghuman.com"
+                android:textSize="20sp"
+                android:layout_margin="10dp"
+
+                />
+
+        </LinearLayout>
+</LinearLayout>
+<!--    <Button-->
+<!--        android:id="@+id/myDataButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:text="@string/my_data"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/productsButton"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:text="@string/notifications"-->
+<!--        android:textSize="16sp" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/myNgoPage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="70dp"-->
+<!--        android:layout_marginTop="5dp"-->
+<!--        android:fontFamily="@font/roboto_bold"-->
+<!--        android:text="@string/my_ngo_page"-->
+<!--        android:textSize="16sp" />-->
+
+    <Button
+        android:id="@+id/accountExitButton"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="16sp"
+        android:layout_marginTop="0dp"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:text="@string/logout"  />
+
+</LinearLayout>

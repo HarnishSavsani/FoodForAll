@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".activities.WelcomeNewUserActivity"
+    android:background="@color/splashBackground"
+    >
+
+
+    <TextView
+        android:id="@+id/welcome_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/belgrano"
+        android:text="@string/hello_exclamation"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="33sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/belgrano"
+        android:text="@string/welcome_text_intro"
+        android:textAlignment="center"
+        android:textColor="@color/teal_700"
+        android:textSize="21sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="61dp"
+        android:background="@drawable/food_form_border"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:orientation="vertical"
+        android:paddingVertical="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subtitle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/belgrano"
+            android:text="@string/are_you"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="26sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/merchantButton"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/login_button_border"
+            android:fontFamily="@font/roboto_bold"
+            android:shadowColor="@color/black"
+            android:text="@string/merchant"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="10dp"
+            android:fontFamily="@font/belgrano"
+            android:text="@string/or"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/ongButton"
+            android:layout_width="180dp"
+            android:layout_height="65dp"
+            android:background="@drawable/signup_button_border"
+            android:fontFamily="@font/roboto_bold"
+            android:shadowColor="@color/black"
+            android:text="@string/ngo"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

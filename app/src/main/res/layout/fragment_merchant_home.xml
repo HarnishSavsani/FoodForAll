@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.merchant.MerchantHomeFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:text="@string/home_merchant_my_products"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/productRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addProductButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="12dp"
+        app:icon="@drawable/ic_baseline_add_circle_outline_24"
+        android:textColor="@color/white"
+        android:text="@string/new_product"
+        android:background="@drawable/signup_button_border"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:layout_marginHorizontal="58dp"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="@string/registered_ngos"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="160dp" />
+
+
+
+
+</LinearLayout>

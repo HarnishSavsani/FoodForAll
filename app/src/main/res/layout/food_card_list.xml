@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="#fff"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/signup_button_border"
+        >
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_margin="20dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo_launcher"
+            />
+                <LinearLayout
+                    android:layout_toRightOf="@id/image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    >
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="20dp"
+                        >
+                        <TextView
+                            android:id="@+id/name"
+                            android:layout_width="60dp"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:text="Bread"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:layout_marginBottom="10dp"
+                            />
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="$0.0"
+                            android:layout_marginBottom="10dp"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/amount"
+                            android:layout_width="match_parent"
+                            android:textAlignment="center"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fff"
+                            android:textSize="16sp"
+                            android:text="12 kg"
+                            android:textStyle="bold"/>
+                    </LinearLayout>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/submitProductButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/login_button_border"
+                        android:backgroundTint="@drawable/signup_button_border"
+                        android:fontFamily="@font/roboto_bold"
+                        android:text="Get"
+                        android:textColor="@color/white"
+                        app:backgroundTint="@color/greenColor1" />
+
+                </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
