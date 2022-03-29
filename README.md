@@ -106,7 +106,3 @@ Click on below Thumbnail to see Demonstration
 
  
 ---
-
-## License
-
-Code and documentation are available according to the Commons Clause Version 1 (see [LICENSE](https://commonsclause.com/)).
