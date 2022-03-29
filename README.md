@@ -86,6 +86,7 @@ Food For All:
 
 ## Demonstration
 
+Click on below Thumbnail to see Demonstration
 [![Food For All Demonstration](https://github.com/Ashwith2001/FoodForAll/blob/main/img/thumbnail.jpg)](https://youtu.be/4Op3FarztoU)
 
 
