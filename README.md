@@ -1,11 +1,11 @@
-# Central Food App: Zero Hunger
+# Food For All App: Zero Hunger
 
 ![GitHub language count](https://img.shields.io/github/languages/count/joao-food/joao-food-app)
 ![GitHub top language](https://img.shields.io/github/languages/top/joao-food/joao-food-app)
 
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://user-images.githubusercontent.com/51249341/126922540-315fa9b6-6989-4c04-9a48-760b0fbcce8d.png" alt="Project logo"></a>
+ <img src="https://ibb.co/j4nGfSx" alt="Project logo"></a>
 </p>
 <h3 align="center">Welcome to Food For All!</h3>
 
