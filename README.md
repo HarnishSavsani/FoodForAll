@@ -37,11 +37,11 @@ __Food For All__ is an app developed for Google Solutions 2022. Our objectives 
 
 - More than 820 million people suffer from hunger in the world;
 - 127 million tons of food are thrown away each year in Latin America;
-- 41 thousands tons of food are thrown away each year just in Brazil.
+- 50 kg of food per person are thrown away each year just in India.
 
-Economic and environment damage are among the consequences of this malfunction in food cycle. Hunger is the biggest consequence. It occurs because, when the food is wasted there is an increase in the value of the products and many families are unable to pay for them. The growth of garbage and environmental problems are also informed by specialists as consequences of those losses. In Brazil, this waste occurs in the followi
-- 50%: During transport and handling;
-- 10%: In the field, where the production processes take place;
+Economic and environment damage are among the consequences of this malfunction in food cycle. Hunger is the biggest consequence. It occurs because, when the food is wasted there is an increase in the value of the products and many families are unable to pay for them. The growth of garbage and environmental problems are also informed by specialists as consequences of those losses. In India, this waste occurs in the following way:
+- 40%: In fragmented food systems and inefficient supply chains;
+- 20%: In weddings;
 - 10%: In retail and supermarket;
 - 30%: During sales and supply.
 
