@@ -23,7 +23,6 @@ Contents
 1. [Our solution](#our-solution)
 2. [Demonstration](#Demonstration)
 3. [Authors](#authors)
-4. [License](#license)
 
 ---
 
