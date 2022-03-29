@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.fomezero.joaofood">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.JoaoFood">
+        <activity android:name=".activities.merchant.RegisterConfirmationActivity"></activity>
+        <activity android:name=".activities.ong.OngMainActivity" />
+        <activity android:name=".activities.merchant.NewProductActivity" />
+        <activity android:name=".activities.merchant.MerchantHomeActivity" />
+        <activity android:name=".activities.WelcomeNewUserActivity" />
+        <activity android:name=".activities.ong.SignUpOngActivity" />
+        <activity android:name=".activities.merchant.SignUpMerchantActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:theme="@style/Theme.JoaoFood">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
