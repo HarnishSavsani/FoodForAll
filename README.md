@@ -21,8 +21,9 @@ Contents
 1. [The problem](#the-problem)
 1. [Market opportunity](#Market-opportunity)
 1. [Our solution](#our-solution)
-1. [Authors](#authors)
-1. [License](#license)
+2. [Demonstration](#Demonstration)
+3. [Authors](#authors)
+4. [License](#license)
 
 ---
 
@@ -83,9 +84,10 @@ Food For All:
 
 ![image info](./img/user_flow_simpli.png)
 
-### User Flow    
+## Demonstration
 
-![image info](./img/user_flow.png)
+[![Food For All Demonstration](https://github.com/Ashwith2001/FoodForAll/blob/main/img/thumbnail.jpg)](https://youtu.be/4Op3FarztoU)
+
 
 ### Implemented Technologies   
 
