@@ -7,7 +7,7 @@
   <a href="" rel="noopener">
  <img src="https://user-images.githubusercontent.com/51249341/126922540-315fa9b6-6989-4c04-9a48-760b0fbcce8d.png" alt="Project logo"></a>
 </p>
-<h3 align="center">Welcome to Central Food!</h3>
+<h3 align="center">Welcome to Food For All!</h3>
 
 
    
@@ -28,7 +28,7 @@ Contents
 
 ## Introduction
 
-__Central Food__ is an app developed for Call for Code Hackathon 2021. Our objectives are reduce the food waste and consequently contribute to reduce hunger. The app connects the merchant, who works in supply centers and has to throw away unsold food everyday, and NGOs that fight hunger and help to feed hungry people before the food becomes  unfit for human consumption.
+__Food For All__ is an app developed for Google Solutions 2022. Our objectives are reduce the food waste and consequently contribute to reduce hunger. The app connects the merchant, who works in supply centers and has to throw away unsold food everyday, and NGOs that fight hunger and help to feed hungry people before the food becomes  unfit for human consumption.
 
 
 ---
@@ -52,8 +52,7 @@ The biggest numbers are caused during transport and handling and during sales an
 ## Market Opportunity
 
 We believe that our app will bring more market opportunities because the hunger has always been a concern for many nations, even more today. When we think about our national scenario, which was greatly aggravated by the pandemic. Our app will bring an innovative idea with high chances of helping people who can´t buy or have acess to food.
-
-Central Food:
+Food For All:
 
 - Alleviate the hunger that was aggravated by the pandemic;
 - Reduce the food waste, that has been a problem for supply centers in Brazil;
@@ -71,7 +70,7 @@ Central Food:
 
 3. The NGO access the app and see the announced notification;
 
-4. The interested NGOs contacts the merchant through the telephone number that appears when he/she clicks on "I want it!" and negotiates with the merchant where he/she can get the food;
+4. The interested NGOs contacts the merchant through the telephone number that appears when he/she clicks on "Get it!" and negotiates with the merchant where he/she can get the food;
 
 5. The NGO goes to the merchant and buys or receives the food.
 
@@ -91,9 +90,7 @@ Central Food:
 ### Implemented Technologies   
 
 - Kotlin
-- Flask
 - Firebase
-- IBM Clound Foundry
 - Twilio
 
 ---
@@ -101,11 +98,8 @@ Central Food:
 
 ## Authors
 
-* [Ana Valente](https://github.com/AnaVSSCaldeira)
-* [Jack Tanaka](https://www.linkedin.com/in/jackeline-tanaka/)
-* [Lucas Martins](https://github.com/lucaomartins/)
-* [Marcus Mariano](https://github.com/marcusmariano)
-* [Nicole Silveira Manoel](https://www.linkedin.com/in/nicole-silveira-manoel-b04b8b159/)
+* [Ashwith Bhatt](https://github.com/Ashwith2001)
+* [Harnish Savsani](https://github.com/HarnishSavsani)
 
  
 ---
