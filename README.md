@@ -55,7 +55,7 @@ We believe that our app will bring more market opportunities because the hunger 
 Food For All:
 
 - Alleviate the hunger that was aggravated by the pandemic;
-- Reduce the food waste, that has been a problem for supply centers in Brazil;
+- Reduce the food waste, that has been a problem for supply centers in India;
 - Help NGOs receive more food to help the greatest number of people per day.
 
 ---
