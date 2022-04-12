@@ -38,7 +38,7 @@ __Food For All__ is an app developed for Google Solutions 2022. Our objectives 
 
 Economic and environment damage are among the consequences of this malfunction in food cycle. Hunger is the biggest consequence. It occurs because, when the food is wasted there is an increase in the value of the products and many families are unable to pay for them. The growth of garbage and environmental problems are also informed by specialists as consequences of those losses. In Brazil, this waste occurs in the followi
 - 50%: During transport and handling;
-- 10%: In the field, where the production processes take place;
+- 10%: In weddings;
 - 10%: In retail and supermarket;
 - 30%: During sales and supply.
 
@@ -52,7 +52,7 @@ We believe that our app will bring more market opportunities because the hunger 
 Food For All:
 
 - Alleviate the hunger that was aggravated by the pandemic;
-- Reduce the food waste, that has been a problem for supply centers in Brazil;
+- Reduce the food waste, that has been a problem for supply centers in India;
 - Help NGOs receive more food to help the greatest number of people per day.
 
 ---
