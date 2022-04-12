@@ -20,7 +20,6 @@ Contents
 1. [Our solution](#our-solution)
 2. [Demonstration](#Demonstration)
 3. [Authors](#authors)
-4. [License](#license)
 
 ---
 
@@ -104,6 +103,3 @@ Click on below Thumbnail to see Demonstration
  
 ---
 
-## License
-
-Code and documentation are available according to the Commons Clause Version 1 (see [LICENSE](https://commonsclause.com/)).
