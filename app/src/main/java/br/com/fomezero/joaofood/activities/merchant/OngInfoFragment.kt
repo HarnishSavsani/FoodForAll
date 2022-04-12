@@ -55,6 +55,9 @@ class OngInfoFragment(val ongData: OngData) : Fragment() {
         else if(ongData.name == "Akshay Patra"){
             profilePicture.loadImage("https://yt3.ggpht.com/ytc/AKedOLTgX2kZJcECRZp7ZbAoOnQ4yHuhRAvN29_flCpfnQ=s900-c-k-c0x00ffffff-no-rj",CircularProgressDrawable(activity!!));
         }
+        else{
+            profilePicture.loadImage("https://thenew.org/app/uploads/2019/06/org-blog-genric-1.jpg",CircularProgressDrawable(activity!!));
+        }
 
         // TODO: get address from database
         address.text = getString(R.string.address_text, ongData.siteUrl)

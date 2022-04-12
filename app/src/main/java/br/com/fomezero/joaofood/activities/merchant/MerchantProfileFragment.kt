@@ -46,15 +46,16 @@ class MerchantProfileFragment : Fragment() {
         acc_name.text = merchantData?.getString("name")
         acc_phone.text = merchantData?.getString("phoneNumber")
         acc_email.text = merchantData?.getString("email")
-        Log.d("Ashwith",merchantData?.getString("imageUrl").toString())
+//        Log.d("Ashwith",merchantData?.getString("imageUrl").toString())
 //        ActiveUserData.data?.getString("image")?.let { imageUrl ->
 //            context?.let{
 //                profilePicture.loadImage(imageUrl, CircularProgressDrawable(activity!!))
 //            }
 //        }
 
-       profilePicture.loadImage("https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", CircularProgressDrawable(activity!!))
-        //profilePicture.loadImage(merchantData?.getString("image"), CircularProgressDrawable(activity!!))
+//        Log.d("AshImg", merchantData?.getString("image").toString())
+       profilePicture.loadImage(merchantData?.getString("imageProf"), CircularProgressDrawable(activity!!))
+        //profilePicture.loadImage(merchantData?.getString("image"), CircularProgressDrawable(activity!!))"https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     }
 
     private fun logout() {

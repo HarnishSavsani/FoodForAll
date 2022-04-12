@@ -13,6 +13,17 @@
         android:layout_height="wrap_content"
         android:background="@drawable/signup_button_border"
         >
+        <TextView
+            android:id="@+id/postDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="textEnd"
+            android:textColor="#fff"
+            android:text="24-05-2022"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginRight="16dp"
+            />
         <ImageView
             android:id="@+id/image"
             android:layout_width="100dp"
@@ -22,6 +33,7 @@
             android:scaleType="centerCrop"
             android:src="@drawable/logo_launcher"
             />
+
                 <LinearLayout
                     android:layout_toRightOf="@id/image"
                     android:layout_width="wrap_content"

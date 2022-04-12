@@ -153,11 +153,17 @@ class SignUpMerchantActivity : AppCompatActivity(), View.OnClickListener {
 
 
     private fun saveDataToFirestore() {
+        val imgResult = UploadImageProvider.uploadFile(profilepic.drawable.toBitmap(), "img123")
+        val url = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        if (imgResult is ImgResult.Success) {
+            val url = imgResult.reponse?.data?.link
+        }
         val ongData = hashMapOf(
             "name" to completeNameField.text.toString(),
             "email" to emailField.text.toString(),
             "phoneNumber" to phoneNumberField.text.toString(),
             "address" to addressfield.text.toString(),
+            "imageProf" to url
         )
         db.collection("merchants")
             .add(ongData)

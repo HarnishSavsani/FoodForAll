@@ -92,6 +92,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-firestore-ktx'
+    implementation 'com.google.firebase:firebase-auth:21.0.3'
 
     testImplementation 'androidx.arch.core:core-testing:2.0.0'
     testImplementation 'junit:junit:4.+'

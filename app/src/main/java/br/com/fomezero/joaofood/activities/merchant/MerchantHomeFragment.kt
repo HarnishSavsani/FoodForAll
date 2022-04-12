@@ -109,7 +109,8 @@ class MerchantHomeFragment : Fragment() {
                                                 product.getString("amount") ?: "",
                                                 product.getString("price") ?: "0",
                                                 urlList?.first(),
-                                                merchantData
+                                                merchantData,
+                                                product.getString("postDate")?:"none",
                                             )
                                         )
                                         productAdapter.notifyDataSetChanged()

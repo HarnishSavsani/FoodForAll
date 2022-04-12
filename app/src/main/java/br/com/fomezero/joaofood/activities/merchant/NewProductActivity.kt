@@ -34,6 +34,9 @@ import kotlinx.android.synthetic.main.activity_new_food.submitProductButton
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import java.time.format.DateTimeFormatter
+import java.sql.Timestamp
+import java.time.LocalDateTime
 import java.util.*
 import kotlin.collections.HashMap
 
@@ -118,6 +121,7 @@ class NewProductActivity : AppCompatActivity() {
                         "amount" to quantityField.text.toString(),
                         "price" to price,
                         "user" to document.reference,
+                        "postDate" to LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")).toString(),
                     )
                     db.collection("products").add(productData)
                         .addOnSuccessListener { productReference ->

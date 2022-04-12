@@ -1,6 +1,7 @@
 package br.com.fomezero.joaofood.activities.ong
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,6 +14,12 @@ import br.com.fomezero.joaofood.R
 import br.com.fomezero.joaofood.util.loadImage
 import br.com.fomezero.joaofood.model.Product
 import com.google.android.material.button.MaterialButton
+import java.time.Instant.now
+import java.time.LocalDate
+import java.time.LocalDate.now
+import java.time.LocalDateTime
+import java.time.chrono.ChronoLocalDate
+import java.time.format.DateTimeFormatter
 
 class ProductListAdapter(
     private val context: Context,
@@ -27,12 +34,24 @@ class ProductListAdapter(
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val product = productList[position]
+        val dateorg = LocalDate.parse(product.postDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
+
+        val curdate = LocalDate.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy")).toString()
+        val curdat1 = LocalDate.parse(curdate, DateTimeFormatter.ofPattern("dd-MM-yyyy"))
+        Log.d("AshDate", "Curdate: "+curdat1+"  "+dateorg.plusDays(2))
         holder.name.text = product.name
+        holder.postDate.text = product.postDate
         holder.price.text = context.getString(R.string.price_template, product.price)
         holder.amount.text = product.amount
         holder.image.loadImage(product.imageUrl, CircularProgressDrawable(context))
-        holder.button.setOnClickListener {
-            loadFragment(MerchantInfoFragment(productList[position]))
+        if(dateorg.plusDays(2) >= curdat1){
+            holder.button.setOnClickListener {
+                loadFragment(MerchantInfoFragment(productList[position]))
+            }
+        }
+        else{
+            holder.button.text = "Expired"
+            holder.button.textSize = 10F
         }
     }
 
@@ -46,6 +65,7 @@ class ProductListAdapter(
         var price: TextView = view.findViewById(R.id.price)
         var amount: TextView = view.findViewById(R.id.amount)
         var image: ImageView = view.findViewById(R.id.image)
+        var postDate: TextView = view.findViewById(R.id.postDate)
         var button: MaterialButton = view.findViewById(R.id.submitProductButton)
     }
 }

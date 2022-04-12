@@ -120,7 +120,7 @@ class LoginActivity : AppCompatActivity() {
     private fun onConnectionError(throwable: Throwable) {
         Log.w(TAG, "Error getting documents.", throwable)
         runOnUiThread {
-            Toast.makeText(baseContext, "Erro de conexão. Tente mais tarde.", Toast.LENGTH_LONG)
+            Toast.makeText(baseContext, "Connection Error. Try Again Later", Toast.LENGTH_LONG)
                 .show()
         }
     }
