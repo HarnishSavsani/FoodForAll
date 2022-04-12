@@ -1,11 +1,8 @@
 # Food For All App: Zero Hunger
 
-![GitHub language count](https://img.shields.io/github/languages/count/joao-food/joao-food-app)
-![GitHub top language](https://img.shields.io/github/languages/top/joao-food/joao-food-app)
-
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://ibb.co/j4nGfSx" alt="Project logo"></a>
+ <img src="https://github.com/Ashwith2001/FoodForAll/blob/main/img/thumbnail.jpg" alt="Project logo"></a>
 </p>
 <h3 align="center">Welcome to Food For All!</h3>
 
