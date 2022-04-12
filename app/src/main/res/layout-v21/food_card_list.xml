@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:textAlignment="textEnd"
             android:textColor="#fff"
-            android:text="24-05-2022"
+            android:text="25-04-2022"
             android:textSize="16sp"
             android:textStyle="bold"
             android:layout_marginRight="16dp"
