@@ -16,9 +16,9 @@ import kotlinx.android.synthetic.main.fragment_notification.notificationSwitch
 
 class NotificationFragment : Fragment() {
     private var notificationList = arrayListOf(
-        "John Carlos just announced Orange!",
-        "John Carlos just announced Banana!",
-        "John Carlos just announced Beet!"
+        "Ashwith Bhatt just announced Orange!",
+        "Harnish Savsani just announced Banana!",
+        "Kumar Vishwas just announced Beet!"
     )
     private lateinit var notificationAdapter: NotificationAdapter
 

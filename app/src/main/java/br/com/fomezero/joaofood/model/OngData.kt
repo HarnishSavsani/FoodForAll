@@ -8,4 +8,5 @@ data class OngData(
 
     // TODO: Lat log
     val siteUrl: String? = null,
+    val isApproved: Boolean? = false,
 )

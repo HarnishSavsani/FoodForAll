@@ -59,7 +59,7 @@
     <string name="new_notifications">New</string>
     <string name="ngo_name_placeholder">NGO Friends of Happyness</string>
     <string name="about_text">About: %s</string>
-    <string name="price_template">$ %s</string>
+    <string name="price_template">%s</string>
     <string name="people_helped">This NGO helps: %d people</string>
     <string name="registration_confirmation">Registration confirmation</string>
     <string name="back_to_home">Back to Home</string>

@@ -36,7 +36,7 @@ class OngProfileFragment : Fragment() {
             activity?.finish()
         }
 
-        profileName.text = ActiveUserData.data?.getString("name") ?: "João"
+        profileName.text = ActiveUserData.data?.getString("name") ?: "Unknown"
         ownerName.text = ActiveUserData.data?.getString("ownerName")?:"Unknown"
         acc_email.text = ActiveUserData.data?.getString("email")?:"Unknown"
         acc_phone.text = ActiveUserData.data?.getString("phoneNumber")?:"Unknown"

@@ -43,7 +43,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/roboto_bold"
             android:layout_margin="10dp"
-            android:text="Joao Carlos"
+            android:text="Ashwith Bhatt"
             android:textColor="@color/white"
             android:textSize="26sp"/>
     </LinearLayout>
@@ -78,7 +78,7 @@
                android:id="@+id/acc_name"
                android:layout_width="wrap_content"
                android:layout_height="wrap_content"
-               android:text="Jaos Carlos"
+               android:text="Harnish Savsani"
                android:textSize="20sp"
                android:layout_margin="10dp"
 
@@ -110,7 +110,7 @@
                 android:id="@+id/acc_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="carlos@gmail.com"
+                android:text="savsani@gmail.com"
                 android:textSize="20sp"
                 android:layout_margin="10dp"
                 />

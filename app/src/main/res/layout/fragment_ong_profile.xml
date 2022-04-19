@@ -93,7 +93,7 @@
                 android:id="@+id/ownerName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Jaos Carlos"
+                android:text="Ashwith Bhatt"
                 android:textSize="20sp"
                 android:layout_margin="10dp"
 
@@ -124,7 +124,7 @@
             android:id="@+id/acc_email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="carlos@gmail.com"
+            android:text="ashwith@gmail.com"
             android:textSize="20sp"
             android:layout_margin="10dp"
             />

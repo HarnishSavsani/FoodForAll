@@ -132,7 +132,8 @@ object ActiveUserData {
                         images[i],
 //                        document.getString("imageUrl"),
                         document.getString("email"),
-                        document.getString("siteUrl")
+                        document.getString("siteUrl"),
+                        document.getBoolean("isApproved"),
                     )
 
                     ongList.add(ong)

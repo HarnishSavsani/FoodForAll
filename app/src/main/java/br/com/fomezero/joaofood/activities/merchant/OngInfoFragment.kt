@@ -3,6 +3,7 @@ package br.com.fomezero.joaofood.activities.merchant
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.graphics.Color
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -17,12 +18,7 @@ import br.com.fomezero.joaofood.activities.ActiveUserData
 import br.com.fomezero.joaofood.activities.merchant.OngInfoFragment.Companion.PLACEHOLDER_ADDRESS
 import br.com.fomezero.joaofood.util.loadImage
 import br.com.fomezero.joaofood.model.OngData
-import kotlinx.android.synthetic.main.fragment_ong_info.address
-import kotlinx.android.synthetic.main.fragment_ong_info.callButton
-import kotlinx.android.synthetic.main.fragment_ong_info.description
-import kotlinx.android.synthetic.main.fragment_ong_info.mapsButton
-import kotlinx.android.synthetic.main.fragment_ong_info.peopleHelped
-import kotlinx.android.synthetic.main.fragment_ong_info.phoneNumber
+import kotlinx.android.synthetic.main.fragment_ong_info.*
 import kotlinx.android.synthetic.main.fragment_ong_info.profileName
 import kotlinx.android.synthetic.main.fragment_ong_info.profilePicture
 import kotlinx.android.synthetic.main.fragment_ong_profile.*
@@ -40,7 +36,16 @@ class OngInfoFragment(val ongData: OngData) : Fragment() {
     override fun onStart() {
         super.onStart()
 
-        profileName.text = ongData.name
+        if(ongData.isApproved == true){
+//            approval.text = "This NGO is approved"
+             profileName.text = ongData.name+" ✔️"
+//            approval.setTextColor(Color.parseColor("#00ff00"))
+        }
+        else{
+             profileName.text = ongData.name+" ❌"
+//            approval.text = "This NGO is not approved"
+//            approval.setTextColor(Color.parseColor("#ff0000"))
+        }
 //        profilePicture.loadImage(ongData.imageUrl, CircularProgressDrawable(activity!!))
         ongData.description?.let {
             description.text = getString(R.string.about_text, ongData.siteUrl)

@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="45dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/ngo_name_placeholder"
+        android:text="Being Human"
         android:textColor="@color/black"
         android:textSize="22sp" />
 
@@ -39,6 +39,18 @@
         android:layout_marginTop="40dp"
         android:paddingLeft="30dp"
         >
+
+<!--        <TextView-->
+<!--            android:id="@+id/approval"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="15dp"-->
+<!--            android:fontFamily="@font/roboto_bold"-->
+<!--            android:gravity="center_horizontal"-->
+<!--            android:layout_gravity="center_horizontal"-->
+<!--            android:text="This NGO is Approved"-->
+<!--            android:textColor="#0f0"-->
+<!--            android:textSize="19sp" />-->
 
         <TextView
             android:id="@+id/peopleHelped"

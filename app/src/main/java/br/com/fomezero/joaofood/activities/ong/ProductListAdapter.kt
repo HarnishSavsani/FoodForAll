@@ -1,16 +1,20 @@
 package br.com.fomezero.joaofood.activities.ong
 
 import android.content.Context
+import android.graphics.Color
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.RecyclerView
 import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import br.com.fomezero.joaofood.R
+import br.com.fomezero.joaofood.activities.ActiveUserData
+import br.com.fomezero.joaofood.model.OngData
 import br.com.fomezero.joaofood.util.loadImage
 import br.com.fomezero.joaofood.model.Product
 import com.google.android.material.button.MaterialButton
@@ -33,6 +37,8 @@ class ProductListAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
+//        val ngoData: OngData
+//        Log.d("Ashtest", ActiveUserData.data?.getBoolean("isApproved").toString())
         val product = productList[position]
         val dateorg = LocalDate.parse(product.postDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
 
@@ -41,17 +47,34 @@ class ProductListAdapter(
         Log.d("AshDate", "Curdate: "+curdat1+"  "+dateorg.plusDays(2))
         holder.name.text = product.name
         holder.postDate.text = product.postDate
-        holder.price.text = context.getString(R.string.price_template, product.price)
+        if(product.price == "0.0"){
+            holder.price.text ="Free"
+        }
+        else{
+            holder.price.text = context.getString(R.string.price_template, product.price)
+        }
+
         holder.amount.text = product.amount
         holder.image.loadImage(product.imageUrl, CircularProgressDrawable(context))
         if(dateorg.plusDays(2) >= curdat1){
-            holder.button.setOnClickListener {
-                loadFragment(MerchantInfoFragment(productList[position]))
+            if(ActiveUserData.data?.getBoolean("isApproved") == true){
+                holder.button.setOnClickListener {
+                    loadFragment(MerchantInfoFragment(productList[position]))
+                }
+            }
+            else{
+                holder.button.setOnClickListener {
+                    Toast.makeText(context, "Your Approval is Pending", Toast.LENGTH_LONG).show()
+                }
             }
         }
         else{
+            holder.button.setOnClickListener {
+                Toast.makeText(context, "Is has Expired or Soldout", Toast.LENGTH_LONG).show()
+            }
             holder.button.text = "Expired"
             holder.button.textSize = 10F
+            holder.button.setBackgroundColor(Color.parseColor("#ff0000"))
         }
     }
 
