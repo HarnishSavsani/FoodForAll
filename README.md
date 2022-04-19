@@ -1,11 +1,8 @@
 # Food For All App: Zero Hunger
 
-![GitHub language count](https://img.shields.io/github/languages/count/joao-food/joao-food-app)
-![GitHub top language](https://img.shields.io/github/languages/top/joao-food/joao-food-app)
-
 <p align="center">
   <a href="" rel="noopener">
- <img src="https://ibb.co/j4nGfSx" alt="Project logo"></a>
+ <img src="https://github.com/Ashwith2001/FoodForAll/blob/main/img/thumbnail.jpg" alt="Project logo"></a>
 </p>
 <h3 align="center">Welcome to Food For All!</h3>
 
@@ -23,7 +20,6 @@ Contents
 1. [Our solution](#our-solution)
 2. [Demonstration](#Demonstration)
 3. [Authors](#authors)
-4. [License](#license)
 
 ---
 
@@ -38,11 +34,11 @@ __Food For All__ is an app developed for Google Solutions 2022. Our objectives 
 
 - More than 820 million people suffer from hunger in the world;
 - 127 million tons of food are thrown away each year in Latin America;
-- 41 thousands tons of food are thrown away each year just in Brazil.
+- 41 thousands tons of food are thrown away each year just in India.
 
-Economic and environment damage are among the consequences of this malfunction in food cycle. Hunger is the biggest consequence. It occurs because, when the food is wasted there is an increase in the value of the products and many families are unable to pay for them. The growth of garbage and environmental problems are also informed by specialists as consequences of those losses. In Brazil, this waste occurs in the followi
+Economic and environment damage are among the consequences of this malfunction in food cycle. Hunger is the biggest consequence. It occurs because, when the food is wasted there is an increase in the value of the products and many families are unable to pay for them. The growth of garbage and environmental problems are also informed by specialists as consequences of those losses. In India, this waste occurs in the following way:
 - 50%: During transport and handling;
-- 10%: In the field, where the production processes take place;
+- 10%: In weddings;
 - 10%: In retail and supermarket;
 - 30%: During sales and supply.
 
@@ -56,7 +52,7 @@ We believe that our app will bring more market opportunities because the hunger 
 Food For All:
 
 - Alleviate the hunger that was aggravated by the pandemic;
-- Reduce the food waste, that has been a problem for supply centers in Brazil;
+- Reduce the food waste, that has been a problem for supply centers in India;
 - Help NGOs receive more food to help the greatest number of people per day.
 
 ---
@@ -107,6 +103,3 @@ Click on below Thumbnail to see Demonstration
  
 ---
 
-## License
-
-Code and documentation are available according to the Commons Clause Version 1 (see [LICENSE](https://commonsclause.com/)).
