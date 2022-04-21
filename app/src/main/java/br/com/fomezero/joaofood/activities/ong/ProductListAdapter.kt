@@ -37,8 +37,7 @@ class ProductListAdapter(
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-//        val ngoData: OngData
-//        Log.d("Ashtest", ActiveUserData.data?.getBoolean("isApproved").toString())
+
         val product = productList[position]
         val dateorg = LocalDate.parse(product.postDate, DateTimeFormatter.ofPattern("dd-MM-yyyy"));
 

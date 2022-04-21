@@ -99,6 +99,17 @@ class SignUpMerchantActivity : AppCompatActivity(), View.OnClickListener {
 
         val fields = textFields.children
 
+        if(completeNameField.text.toString().isEmpty() && emailField.text.toString().isEmpty() &&
+            phoneNumberField.text.toString().isEmpty() && addressfield.text.toString().isEmpty()){
+            val msg = Toast.makeText(
+                applicationContext,
+                "Please fill in all fields.",
+                Toast.LENGTH_LONG
+            )
+            msg.setGravity(Gravity.CENTER, 0, 400)
+            msg.show()
+            return
+        }
         for (field in fields) {
             if (field is TextInputEditText && field.text.toString().isEmpty()) {
                 val msg = Toast.makeText(
@@ -154,9 +165,9 @@ class SignUpMerchantActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun saveDataToFirestore() {
         val imgResult = UploadImageProvider.uploadFile(profilepic.drawable.toBitmap(), "img123")
-        val url = "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+        var url = ""
         if (imgResult is ImgResult.Success) {
-            val url = imgResult.reponse?.data?.link
+            url = imgResult.reponse?.data?.link.toString()
         }
         val ongData = hashMapOf(
             "name" to completeNameField.text.toString(),

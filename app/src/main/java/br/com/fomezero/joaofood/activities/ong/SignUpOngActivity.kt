@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
+import android.view.Gravity
 import android.view.View
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
@@ -106,6 +107,18 @@ class SignUpOngActivity : AppCompatActivity(), View.OnClickListener {
         val email = emailField.text.toString()
         val password = passwordField.text.toString()
 
+        if(completeNameField.text.toString().isEmpty() && ongNameField.text.toString().isEmpty() &&
+            websiteField.text.toString().isEmpty() && emailField.text.toString().isEmpty() && cnpjField.text.toString().isEmpty()
+            && phoneNumberField.text.toString().isEmpty()){
+            val msg = Toast.makeText(
+                applicationContext,
+                "Please fill in all fields.",
+                Toast.LENGTH_LONG
+            )
+            msg.setGravity(Gravity.CENTER, 0, 400)
+            msg.show()
+            return
+        }
         auth.createUserWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {

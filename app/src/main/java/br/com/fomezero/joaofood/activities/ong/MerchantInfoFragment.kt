@@ -3,6 +3,7 @@ package br.com.fomezero.joaofood.activities.ong
 import android.Manifest
 import android.content.Intent
 import android.content.pm.PackageManager
+import android.location.Location
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
@@ -32,6 +33,7 @@ class MerchantInfoFragment(private val product: Product) : Fragment() {
         Log.d(TAG, "onStart: $product")
         profileName.text = product.merchantData.name
         phoneNumber.text = getString(R.string.phone_number, product.merchantData.phoneNumber)
+
         Log.d("Ashwith", product.merchantData.email.toString())
 
 
