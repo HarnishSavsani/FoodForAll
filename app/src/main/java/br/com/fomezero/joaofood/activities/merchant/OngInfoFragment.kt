@@ -50,19 +50,19 @@ class OngInfoFragment(val ongData: OngData) : Fragment() {
         ongData.description?.let {
             description.text = getString(R.string.about_text, ongData.siteUrl)
         }
-
-        if(ongData.name == "Care Foundation"){
-            profilePicture.loadImage("https://img.freepik.com/free-vector/family-care-foundation-logo-vector_23987-272.jpg",CircularProgressDrawable(activity!!));
-        }
-        else if(ongData.name == "Spoon"){
-            profilePicture.loadImage("https://media-exp1.licdn.com/dms/image/C560BAQGaQIPt1OBsMQ/company-logo_400_400/0/1582840078342?e=1651708800&v=beta&t=JVFygzGTbH8ks4WUuimAVo9bhjusOuyWpvhwjJxBtAA",CircularProgressDrawable(activity!!));
-        }
-        else if(ongData.name == "Akshay Patra"){
-            profilePicture.loadImage("https://yt3.ggpht.com/ytc/AKedOLTgX2kZJcECRZp7ZbAoOnQ4yHuhRAvN29_flCpfnQ=s900-c-k-c0x00ffffff-no-rj",CircularProgressDrawable(activity!!));
-        }
-        else{
-            profilePicture.loadImage("https://thenew.org/app/uploads/2019/06/org-blog-genric-1.jpg",CircularProgressDrawable(activity!!));
-        }
+        profilePicture.loadImage(ongData.imageUrl.toString(),CircularProgressDrawable(activity!!));
+//        if(ongData.name == "Care Foundation"){
+//            profilePicture.loadImage("https://img.freepik.com/free-vector/family-care-foundation-logo-vector_23987-272.jpg",CircularProgressDrawable(activity!!));
+//        }
+//        else if(ongData.name == "Spoon"){
+//            profilePicture.loadImage("https://media-exp1.licdn.com/dms/image/C560BAQGaQIPt1OBsMQ/company-logo_400_400/0/1582840078342?e=1651708800&v=beta&t=JVFygzGTbH8ks4WUuimAVo9bhjusOuyWpvhwjJxBtAA",CircularProgressDrawable(activity!!));
+//        }
+//        else if(ongData.name == "Akshay Patra"){
+//            profilePicture.loadImage("https://yt3.ggpht.com/ytc/AKedOLTgX2kZJcECRZp7ZbAoOnQ4yHuhRAvN29_flCpfnQ=s900-c-k-c0x00ffffff-no-rj",CircularProgressDrawable(activity!!));
+//        }
+//        else{
+//            profilePicture.loadImage("https://thenew.org/app/uploads/2019/06/org-blog-genric-1.jpg",CircularProgressDrawable(activity!!));
+//        }
 
         // TODO: get address from database
         address.text = getString(R.string.address_text, ongData.siteUrl)

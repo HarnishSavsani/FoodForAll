@@ -2,23 +2,24 @@ package br.com.fomezero.joaofood.activities.ong
 
 import android.Manifest
 import android.content.ActivityNotFoundException
+import android.content.DialogInterface
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.provider.MediaStore
 import android.util.Log
 import android.view.Gravity
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.graphics.drawable.toBitmap
 import br.com.fomezero.joaofood.R
 import br.com.fomezero.joaofood.activities.LoginActivity
 import br.com.fomezero.joaofood.activities.WelcomeNewUserActivity
-import br.com.fomezero.joaofood.activities.merchant.SignUpMerchantActivity
 import br.com.fomezero.joaofood.modules.img.domain.api.UploadImageProvider
 import br.com.fomezero.joaofood.modules.img.domain.model.ImgResult
 import com.google.firebase.auth.FirebaseAuth
@@ -83,6 +84,30 @@ class SignUpOngActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     private fun takePhoto() {
+//        val optionsMenu = arrayOf<CharSequence>("Take Photo", "Choose from Gallery", "Exit")
+//        val builder = AlertDialog.Builder(this)
+//
+//        builder.setItems(
+//            optionsMenu
+//        ) { dialogInterface, i ->
+//            if (optionsMenu[i].equals("Take Photo")) {
+//                // Open the camera and get the photo
+//                val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+//                startActivityForResult(takePictureIntent, SignUpOngActivity.CAMERA_REQUEST)
+//            } else if (optionsMenu[i].equals("Choose from Gallery")) {
+//                // choose from  external storage
+//                val takePictureIntent = Intent(
+//                    Intent.ACTION_PICK,
+//                    MediaStore.Images.Media.EXTERNAL_CONTENT_URI
+//                )
+//                startActivityForResult(takePictureIntent, SignUpOngActivity.CAMERA_REQUEST)
+//            } else if (optionsMenu[i].equals("Exit")) {
+//                dialogInterface.dismiss()
+//            }
+//
+//        }
+//        builder.show()
+
         val takePictureIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
         try {
             startActivityForResult(takePictureIntent, SignUpOngActivity.CAMERA_REQUEST)
@@ -170,11 +195,15 @@ class SignUpOngActivity : AppCompatActivity(), View.OnClickListener {
                         val url = imgResult.reponse?.data?.link
                         val map = HashMap<String, Any>()
                         val array = arrayOf(url)
+                        val imageUrl = url;
                         map["image"] = Arrays.asList(*array)
-                        documentReference.update(map)
+//                        documentReference.update(map)
+                        documentReference.update("imageURL", imageUrl)
                     }
 
+
                 }
+
                 db.collection("users")
                     .add(userData)
                     .addOnSuccessListener { usersDocumentReference ->
@@ -186,6 +215,7 @@ class SignUpOngActivity : AppCompatActivity(), View.OnClickListener {
                                 val url = imgResult.reponse?.data?.link
                                 val map = HashMap<String, Any>()
                                 val array = arrayOf(url)
+                                val imageUrl = url;
                                 map["image"] = Arrays.asList(*array)
                                 usersDocumentReference.update(map)
                             }

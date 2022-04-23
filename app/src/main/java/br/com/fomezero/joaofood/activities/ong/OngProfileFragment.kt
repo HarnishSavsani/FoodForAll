@@ -50,15 +50,22 @@ class OngProfileFragment : Fragment() {
 //                profilePicture.loadImage(imageUrl,  CircularProgressDrawable(context!!))
 //            }
 //        }
-        if(ActiveUserData.data?.getString("name")?.toString() == "Care Foundation"){
-            profilePicture.loadImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZ-MT4dbx2DMIV33zW8PCLRIxJgIBJvHYFA&usqp=CAU",CircularProgressDrawable(activity!!));
+        if(ActiveUserData.data?.getString("imageURL") == null){
+            profilePicture.loadImage("https://foodforalladmin.netlify.app/assets/food_logo.png",CircularProgressDrawable(activity!!));
         }
-        else if(ActiveUserData.data?.getString("name")?.toString() == "Spoon"){
-            profilePicture.loadImage("https://media-exp1.licdn.com/dms/image/C560BAQGaQIPt1OBsMQ/company-logo_400_400/0/1582840078342?e=1651708800&v=beta&t=JVFygzGTbH8ks4WUuimAVo9bhjusOuyWpvhwjJxBtAA",CircularProgressDrawable(activity!!));
+        else{
+        profilePicture.loadImage(ActiveUserData.data?.getString("imageURL"),CircularProgressDrawable(activity!!));
         }
-        else if(ActiveUserData.data?.getString("name")?.toString() == "Akshay Patra"){
-            profilePicture.loadImage("https://www.akshayapatrausa.org/wp-content/uploads/2019/04/ffe-logo7.png",CircularProgressDrawable(activity!!));
-        }
+
+//        if(ActiveUserData.data?.getString("name")?.toString() == "Care Foundation"){
+//            profilePicture.loadImage("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlZ-MT4dbx2DMIV33zW8PCLRIxJgIBJvHYFA&usqp=CAU",CircularProgressDrawable(activity!!));
+//        }
+//        else if(ActiveUserData.data?.getString("name")?.toString() == "Spoon"){
+//            profilePicture.loadImage("https://media-exp1.licdn.com/dms/image/C560BAQGaQIPt1OBsMQ/company-logo_400_400/0/1582840078342?e=1651708800&v=beta&t=JVFygzGTbH8ks4WUuimAVo9bhjusOuyWpvhwjJxBtAA",CircularProgressDrawable(activity!!));
+//        }
+//        else if(ActiveUserData.data?.getString("name")?.toString() == "Akshay Patra"){
+//            profilePicture.loadImage("https://www.akshayapatrausa.org/wp-content/uploads/2019/04/ffe-logo7.png",CircularProgressDrawable(activity!!));
+//        }
 
 
     }
